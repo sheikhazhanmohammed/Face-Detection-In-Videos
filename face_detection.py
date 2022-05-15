@@ -95,7 +95,8 @@ else:
         features = resnet(imgs)
         face_features[start_index:end_index] = features.detach().numpy()
 
-clt = DBSCAN( min_samples=20, metric="euclidean", n_jobs=4)
+min_sam = int(len(final_faces_list)*0.1)
+clt = DBSCAN(min_samples=min_sam, metric="euclidean", n_jobs=4)
 clt.fit(face_features)
 
 labelIDs = np.unique(clt.labels_)
