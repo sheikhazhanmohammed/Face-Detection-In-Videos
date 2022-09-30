@@ -2,7 +2,7 @@ certifi==2021.10.8
 charset-normalizer==2.0.12
 facenet-pytorch==2.5.2
 idna==3.3
-joblib==1.1.0
+joblib==1.2.0
 numpy==1.22.3
 opencv-python==4.5.5.64
 Pillow==9.1.0
